@@ -1,6 +1,22 @@
 <% include ./partials/header %>
 
-
+<div class="ui main text container segment">
+	<div class="ui huge header">
+		<%= blog.restaurant %>
+	</div>
+	<div>
+		<img src="<%= blog.image %>">
+	</div>
+	<div>
+		<span><%= blog.created.toDateString() %></span>
+	</div>
+	<div>
+		<p><%= blog.body %></p>
+	</div>
+	<form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+		<button class="ui red basic button">Delete</button>
+	</form>
+</div>
 
 
 
