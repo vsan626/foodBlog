@@ -1,3 +1,11 @@
-.container.main{
+.container.main {
 	margin-top: 7.0em;
+}
+
+.blogPost {
+	margin-top: 3.0em;
+}
+
+#delete {
+	display: inline;
 }
