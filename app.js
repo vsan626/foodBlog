@@ -102,7 +102,7 @@ app.delete("/blogs/:id", function(req, res){
 			res.redirect("/blogs")
 		}
 	})
-})
+}) 
 
 
 
